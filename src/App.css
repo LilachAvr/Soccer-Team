@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.crestUrl{
+  /* width: 10%; */
+  height: 5vh;
+}
+
+.table{
+  min-width: 700;
+
+}
+
+.itsFevorite{
+  background-color: yellow;
+}
+
+.tableHover :hover{
+  color: white;
+  background-color: blue;
+}
+
+.tableSelected{
+  background-color: blue;
+}
+
+table th {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background:black;
+  color: white;
+}
