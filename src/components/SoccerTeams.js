@@ -3,7 +3,9 @@ import axios from 'axios';
 import '../App.css';
 
 class SoccerTeams extends Component {
+
     state = { selectRow: [], teamsDetails: [], selected: [] }
+
     getData = () => {
         const authAxios = axios.create({
             headers: {
@@ -30,6 +32,7 @@ class SoccerTeams extends Component {
         this.getData()
         localStorage.getItem('Fevorite')
     }
+
     render() {
 
         return (
@@ -66,12 +69,9 @@ class SoccerTeams extends Component {
                             )
                         })}
                     </tbody>
-                </table>
-
-                
+                </table>     
             </div>
         );
-
     }
 
     changeColor = (selectRow) => e => {
